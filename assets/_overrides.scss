@@ -1,6 +1,12 @@
 @import "./global.scss";
 @import "./components/card.scss";
-
+@mixin card() {
+  background-image: url("/hex.png");
+  background-color: #000c !important;
+  background-size: 250%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
 $sm: 640px;
 $md: 769px;
 $lg: 960px;

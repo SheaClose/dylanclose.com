@@ -3,54 +3,42 @@
     <template #start>
       <div class="p-d-flex">
         <h2 class="p-d-flex p-ai-center">Hair By Dylan</h2>
-        <DC class="dc-logo" style="height: 2em; width: 3em; font-size: 1em" />
+        <img src="/DC.png" class="p-ml-3" style="height: 2em; width: 3em" />
       </div>
     </template>
     <template #end>
       <h2 class="p-d-flex p-ai-center">
-        <DC class="dc-logo" style="height: 2em; width: 3em; font-size: 1em" />
+        <img src="/DC.png" alt="" style="height: 2em; width: 3em" />
       </h2>
     </template>
   </Menubar>
 </template>
 
 <script>
-import Menubar from "primevue/menubar";
-import DC from "~/assets/dc.svg?inline";
-
 export default {
-  components: { DC },
   data() {
     return {
       items: [
         {
           class: "p-d-lg-none p-text-bold",
           label: "Hair By Dylan",
-          disabled: true,
+          disabled: true
         },
         {
           label: "Home",
-          to: "/",
+          to: "/"
         },
-        // {
-        //   label: "Bio",
-        //   to: "/Bio",
-        // },
         {
           label: "Contact",
-          to: "/Contact",
+          to: "/Contact"
         },
-        // {
-        //   label: "Location",
-        //   to: "/Location",
-        // },
         {
           label: "Menu",
-          to: "/Menu",
-        },
-      ],
+          to: "/Menu"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 

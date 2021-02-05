@@ -1,62 +1,62 @@
 export default {
-    // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-    ssr: false,
+  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
+  ssr: false,
 
-    // Global page headers (https://go.nuxtjs.dev/config-head)
-    head: {
-        title: "Hair By Dylan",
-        meta: [
-            { charset: "utf-8" },
-            {
-                name: "viewport",
-                content: "width=device-width, initial-scale=1"
-            },
-            { hid: "description", name: "description", content: "" }
-        ],
-        link: [
-            { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-            { rel: "preconnect", href: "https://fonts.gstatic.com" },
-            {
-                rel: "stylesheet",
-                href:
-                    "https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto&display=swap"
-            }
-        ]
-    },
-
-    // Global CSS (https://go.nuxtjs.dev/config-css)
-    css: [
-        "primeflex/primeflex.css",
-        "@/assets/_overrides.scss",
-        "@fortawesome/fontawesome-free/css/all.css"
+  // Global page headers (https://go.nuxtjs.dev/config-head)
+  head: {
+    title: "Hair By Dylan",
+    meta: [
+      { charset: "utf-8" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
+      { hid: "description", name: "description", content: "" }
     ],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto&display=swap"
+      }
+    ]
+  },
 
-    // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-    plugins: [],
+  // Global CSS (https://go.nuxtjs.dev/config-css)
+  css: [
+    "primeflex/primeflex.css",
+    "@/assets/_overrides.scss",
+    "@fortawesome/fontawesome-free/css/all.css"
+  ],
 
-    // Auto import components (https://go.nuxtjs.dev/config-components)
-    components: true,
+  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  plugins: [],
 
-    // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-    buildModules: ["@nuxtjs/svg"],
+  // Auto import components (https://go.nuxtjs.dev/config-components)
+  components: true,
 
-    primevue: {
-        ripple: true,
-        components: [
-            "InputText",
-            "Button",
-            "Toast",
-            "Menubar",
-            "Card",
-            "Divider",
-            "ProgressSpinner"
-        ]
-    },
+  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+  buildModules: [],
 
-    // Modules (https://go.nuxtjs.dev/config-modules)
-    modules: ["primevue/nuxt"],
+  primevue: {
+    ripple: true,
+    components: [
+      "InputText",
+      "Button",
+      "Toast",
+      "Menubar",
+      "Card",
+      "Divider",
+      "ProgressSpinner"
+    ]
+  },
 
-    // Build Configuration (https://go.nuxtjs.dev/config-build)
-    build: {},
-    target: "static"
+  // Modules (https://go.nuxtjs.dev/config-modules)
+  modules: ["primevue/nuxt"],
+
+  // Build Configuration (https://go.nuxtjs.dev/config-build)
+  build: {},
+  target: "static"
 };

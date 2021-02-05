@@ -112,9 +112,9 @@ export default {
     margin: auto;
     max-width: 850px;
     width: 100%;
-    background-color: #000c;
     color: #fff;
     letter-spacing: 0.5px;
+    @include card();
     .icon {
       height: 1em;
       line-height: 1;

@@ -62,9 +62,9 @@ export default {
   .p-card {
     max-width: 850px;
     margin: auto;
-    background-color: #000c;
     color: #fff;
     letter-spacing: 0.5px;
+    @include card();
   }
   @media (max-width: $lg) {
     .p-card {

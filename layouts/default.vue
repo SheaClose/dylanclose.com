@@ -10,8 +10,8 @@ import Header from "@/components/Header";
 
 export default {
   components: {
-    Header,
-  },
+    Header
+  }
 };
 </script>
 <style lang="scss">
@@ -36,8 +36,13 @@ html {
 }
 
 .p-menubar {
+  background-image: url("/hex.png");
+  background-color: #000c !important;
+  background-size: 100vw;
+  background-position-x: -135px;
+  background-position-y: 130px;
+
   flex: 0 0 auto;
-  background: #fff;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
 }
