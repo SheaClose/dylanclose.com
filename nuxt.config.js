@@ -4,7 +4,7 @@ export default {
 
     // Global page headers (https://go.nuxtjs.dev/config-head)
     head: {
-        title: "nuxtbox",
+        title: "Hair By Dylan",
         meta: [
             { charset: "utf-8" },
             {

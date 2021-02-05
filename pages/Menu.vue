@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Card>
+    <Card class="p-my-6">
       <template #content>
         <ProgressSpinner v-if="display" />
         <script
@@ -21,13 +21,15 @@ export default {
     setTimeout(() => {
       this.display = false;
     }, 10000);
-  },
+  }
 };
 </script>
 
 <style lang="scss">
+@import "@/assets/_overrides.scss";
+
 .content-body {
-  background-image: url("/menu.jpg");
+  background-image: url("/menu3.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -35,11 +37,24 @@ export default {
   align-items: center;
   justify-content: center;
   .p-card {
-    margin: 40px;
+    margin: auto;
+    max-width: 850px;
     width: 100%;
     background-color: #000c;
     color: #fff;
     letter-spacing: 0.5px;
+  }
+  @media (max-width: $lg) {
+    background-image: url("/menu2.jpg");
+    .p-card {
+      max-width: 80vw;
+    }
+  }
+  @media (max-width: $md) {
+    background-image: url("/menu1.jpg");
+    .p-card {
+      max-width: 90vw;
+    }
   }
 }
 .p-progress-spinner {
@@ -50,5 +65,10 @@ export default {
 }
 iframe {
   position: relative;
+}
+@media (max-width: 423px) {
+  .p-progress-spinner {
+    display: none;
+  }
 }
 </style>

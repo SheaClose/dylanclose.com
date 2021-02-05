@@ -1,6 +1,6 @@
 <template>
   <div class="contact-container">
-    <Card>
+    <Card class="p-my-6">
       <template #content>
         <div>
           <div class="p-grid">
@@ -80,7 +80,10 @@ export default {
   mounted() {
     setTimeout(() => {
       if (window && window.google && window.google.maps) {
-        const latLng = { lat: 30.29823840450783, lng: -97.70183225262568 };
+        const latLng = {
+          lat: 30.29823840450783,
+          lng: -97.70183225262568,
+        };
         const map = new window.google.maps.Map(document.getElementById("map"), {
           center: latLng,
           zoom: 14,
@@ -99,14 +102,15 @@ export default {
 <style lang="scss">
 @import "assets/_overrides.scss";
 .contact-container {
-  background-image: url("/contact.jpg");
+  background-image: url("/contact3.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   .p-card {
-    margin: 40px;
+    margin: auto;
+    max-width: 850px;
     width: 100%;
     background-color: #000c;
     color: #fff;
@@ -114,6 +118,18 @@ export default {
     .icon {
       height: 1em;
       line-height: 1;
+    }
+  }
+  @media (max-width: $lg) {
+    background-image: url("/contact2.jpg");
+    .p-card {
+      max-width: 80vw;
+    }
+  }
+  @media (max-width: $md) {
+    background-image: url("/contact1.jpg");
+    .p-card {
+      max-width: 90vw;
     }
   }
   #map {

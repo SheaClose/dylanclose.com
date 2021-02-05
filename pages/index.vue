@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Card>
+    <Card class="p-my-6">
       <template #content>
         <div class="p-d-flex p-jc-center">
           <img
@@ -52,18 +52,32 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/_overrides.scss";
 .container {
-  background-image: url("/main.jpg");
+  background-image: url("/main3.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   .p-card {
-    margin: 40px;
+    max-width: 850px;
+    margin: auto;
     background-color: #000c;
     color: #fff;
     letter-spacing: 0.5px;
+  }
+  @media (max-width: $lg) {
+    .p-card {
+      max-width: 80vw;
+    }
+    background-image: url("/main2.jpg");
+  }
+  @media (max-width: $md) {
+    .p-card {
+      max-width: 90vw;
+    }
+    background-image: url("/main1.jpg");
   }
 }
 </style>
