@@ -18,6 +18,7 @@
     "primevue": "2.3.0"
   },
   "devDependencies": {
+    "@nuxtjs/svg": "^0.1.12",
     "concurrently": "^5.3.0",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.1"

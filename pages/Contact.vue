@@ -5,45 +5,61 @@
         <div>
           <div class="p-grid">
             <div class="p-col-12 p-md-8" id="map"></div>
-            <div class="contact p-col-12 p-md-4 p-px-5">
-              <h3 class="p-mb-1">Location:</h3>
-              <p>4533 Ruiz St #3</p>
-              <p>Austin, TX 78723</p>
-              <h3 class="p-my-1">Hours:</h3>
-              <p>Monday - Saturday:</p>
-              <p>10:00 AM - 5:00 PM</p>
-              <h3 class="p-my-1">Contact:</h3>
-              <p class="p-grid">
-                <i class="p-col-fixed fab fa-facebook" style="width: 2rem"></i>
-                <a
-                  href="https://www.facebook.com/DylanCloseEncounters"
-                  class="p-col"
-                >
-                  /DylanCloseEncounters
-                </a>
-              </p>
-              <p class="p-grid">
-                <i class="p-col-fixed fab fa-instagram" style="width: 2rem"></i>
-                <a
-                  href="https://www.instagram.com/dylan_close_encounters/"
-                  class="p-col"
-                >
-                  @Dylan.Close.Encounters
-                </a>
-              </p>
-              <p class="p-grid">
-                <i class="p-col-fixed fa fa-mobile-alt" style="width: 2rem"></i>
-                <a
-                  href="https://www.instagram.com/dylan_close_encounters/"
-                  class="p-col"
-                >
-                  (682) 472-7491
-                </a>
-              </p>
+            <div
+              class="contact p-col-12 p-md-4 p-px-5 p-d-flex p-flex-column p-jc-evenly"
+            >
+              <div>
+                <h3 class="p-mb-1">Location:</h3>
+                <p>4533 Ruiz St #3</p>
+                <p>Austin, TX 78723</p>
+              </div>
+              <div>
+                <h3 class="p-my-1">Hours:</h3>
+                <p>Monday - Saturday:</p>
+                <p>10:00 AM - 5:00 PM</p>
+              </div>
+              <div>
+                <h3 class="p-my-1">Contact:</h3>
+                <p class="p-d-flex">
+                  <i
+                    class="p-col-fixed fab fa-facebook"
+                    style="width: 2rem"
+                  ></i>
+                  <a
+                    href="https://www.facebook.com/DylanCloseEncounters"
+                    class="p-col"
+                  >
+                    /DylanCloseEncounters
+                  </a>
+                </p>
+                <p class="p-d-flex">
+                  <i
+                    class="p-col-fixed fab fa-instagram"
+                    style="width: 2rem"
+                  ></i>
+                  <a
+                    href="https://www.instagram.com/dylan_close_encounters/"
+                    class="p-col"
+                  >
+                    @Dylan.Close.Encounters
+                  </a>
+                </p>
+                <p class="p-d-flex">
+                  <i
+                    class="p-col-fixed fa fa-mobile-alt"
+                    style="width: 2rem"
+                  ></i>
+                  <a
+                    href="https://www.instagram.com/dylan_close_encounters/"
+                    class="p-col"
+                  >
+                    (682) 472-7491
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <Divider />
       </template>
     </Card>
   </div>
@@ -92,6 +108,9 @@ export default {
   .p-card {
     margin: 40px;
     width: 100%;
+    background-color: #000c;
+    color: #fff;
+    letter-spacing: 1px;
     .icon {
       height: 1em;
       line-height: 1;

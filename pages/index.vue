@@ -1,8 +1,14 @@
 <template>
   <div class="container">
-    <!-- <img srcset="main.jpg" src="main.jpg" aria-invalid="true" /> -->
     <Card>
       <template #content>
+        <div class="p-d-flex p-jc-center">
+          <img
+            class="p-mb-3"
+            src="/dylan.jpg"
+            style="border-radius: 50%; height: 12em; width: 12em"
+          />
+        </div>
         <p>
           Born and raised in Texas, Dylan spent 10 years as an electrician
           before he traded in his wire cutters for a pair of shears.
@@ -55,6 +61,9 @@ export default {
   align-items: center;
   .p-card {
     margin: 40px;
+    background-color: #000c;
+    color: #fff;
+    letter-spacing: 1px;
   }
 }
 </style>

@@ -38,7 +38,7 @@ export default {
     components: true,
 
     // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-    buildModules: [],
+    buildModules: ["@nuxtjs/svg"],
 
     primevue: {
         ripple: true,
@@ -48,7 +48,8 @@ export default {
             "Toast",
             "Menubar",
             "Card",
-            "Divider"
+            "Divider",
+            "ProgressSpinner"
         ]
     },
 
