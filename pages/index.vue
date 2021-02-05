@@ -36,7 +36,6 @@
           Revenge". He also is passionate about vintage Vespa scooters,
           American/European football, and fashion.
         </p>
-        <Divider />
       </template>
     </Card>
   </div>
@@ -46,12 +45,12 @@
 import Header from "@/components/Header";
 export default {
   components: {
-    Header,
-  },
+    Header
+  }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/_overrides.scss";
 .container {
   background-image: url("/main3.jpg");

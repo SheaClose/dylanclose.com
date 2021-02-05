@@ -72,9 +72,9 @@ export default {
     return {
       script: [
         {
-          src: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`,
-        },
-      ],
+          src: `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`
+        }
+      ]
     };
   },
   mounted() {
@@ -82,24 +82,24 @@ export default {
       if (window && window.google && window.google.maps) {
         const latLng = {
           lat: 30.29823840450783,
-          lng: -97.70183225262568,
+          lng: -97.70183225262568
         };
         const map = new window.google.maps.Map(document.getElementById("map"), {
           center: latLng,
-          zoom: 14,
+          zoom: 14
         });
         new google.maps.Marker({
           position: latLng,
           map,
-          title: "Haute European Salon",
+          title: "Haute European Salon"
         });
       }
     }, 1000);
-  },
+  }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "assets/_overrides.scss";
 .contact-container {
   background-image: url("/contact3.jpg");
