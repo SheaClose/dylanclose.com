@@ -63,12 +63,12 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-iframe {
-  position: relative;
-}
 @media (max-width: 423px) {
   .p-progress-spinner {
     display: none;
   }
+}
+/deep/ iframe {
+  position: relative;
 }
 </style>
