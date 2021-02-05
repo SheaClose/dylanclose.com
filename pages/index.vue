@@ -2,7 +2,7 @@
   <div class="container">
     <Card class="p-my-6">
       <template #content>
-        <div class="p-d-flex p-jc-center">
+        <div class="p-d-flex p-jc-center p-mt-3">
           <img
             class="p-mb-3"
             src="/dylan.jpg"
@@ -15,21 +15,21 @@
         </p>
         <Divider />
 
-        <p>
+        <p class="p-mt-3">
           In June 2011 he enrolled at the Aveda institute in Austin. Seeking to
           start a career where he could exercise his creative talent in a more
           social setting.
         </p>
         <Divider />
 
-        <p>
+        <p class="p-mt-3">
           Dylan specializes in long layered full styles, dapper men's cuts, and
           edgy new looks with cut and color. He is constantly striving to
           increase his skills and attends classes multiple times a year.
         </p>
         <Divider />
 
-        <p>
+        <p class="p-mt-3">
           Ever eager to learn, every head of hair is an exciting new opportunity
           to hone his skill set. In his free time, he enjoys playing and singing
           in his band "Sniper 66" or playing Bass for his other band "Crime
