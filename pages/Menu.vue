@@ -39,7 +39,7 @@ export default {
     width: 100%;
     background-color: #000c;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
 }
 .p-progress-spinner {

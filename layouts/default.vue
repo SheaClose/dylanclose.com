@@ -70,7 +70,7 @@ a {
 .p-menubar {
   .p-menubar-root-list > .p-menuitem {
     font-weight: 900;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     :hover {
       .p-menuitem-text {
         color: #008080;

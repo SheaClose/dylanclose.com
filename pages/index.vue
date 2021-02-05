@@ -63,7 +63,7 @@ export default {
     margin: 40px;
     background-color: #000c;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
 }
 </style>
