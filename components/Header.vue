@@ -2,12 +2,17 @@
   <Menubar :model="items">
     <template #start>
       <div class="p-d-flex">
-        <h2 class="p-d-flex p-ai-center">Hair By Dylan</h2>
-        <img src="/DC.png" class="p-ml-3" style="height: 2em; width: 3em" />
+        <h2 @click="routeTo" class="p-d-flex p-ai-center">Hair By Dylan</h2>
+        <img
+          @click="routeTo"
+          src="/DC.png"
+          class="p-ml-3"
+          style="height: 2em; width: 3em"
+        />
       </div>
     </template>
     <template #end>
-      <h2 class="p-d-flex p-ai-center">
+      <h2 @click="routeTo" class="p-d-flex p-ai-center">
         <img src="/DC.png" alt="" style="height: 2em; width: 3em" />
       </h2>
     </template>
@@ -38,6 +43,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    routeTo() {
+      this.$router.push("/");
+    }
   }
 };
 </script>
